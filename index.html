@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DropSchedule - Interactive Timeline</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="water-background" id="water-background"></div>
+    
+    <div class="container">
+        <header class="glass-header">
+            <div class="header-content">
+                <h1 class="app-title">Drauy's Schedula</h1>
+                <div class="date-container">
+                    <div class="greeting" id="greeting">Good Morning</div>
+                    <p id="current-date" class="current-date"></p>
+                    <div class="time-indicator">
+                        <span id="current-time"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="quote-container">
+                <p id="motivational-quote" class="motivational-quote"></p>
+            </div>
+        </header>
+        
+        <main class="main-content">
+            <div class="day-selector">
+                <button class="day-btn active" data-day="Monday">Monday</button>
+                <button class="day-btn" data-day="Tuesday">Tuesday</button>
+                <button class="day-btn" data-day="Wednesday">Wednesday</button>
+                <button class="day-btn" data-day="Thursday">Thursday</button>
+                <button class="day-btn" data-day="Friday">Friday</button>
+                <button class="day-btn" data-day="Saturday">Sartuday</button>
+                <button class="day-btn" data-day="Sunday">Sunday</button>
+            </div>
+            
+            <div class="timeline-container">
+                <div id="task-container" class="task-container">
+                    <!-- Tasks will be dynamically inserted here -->
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
